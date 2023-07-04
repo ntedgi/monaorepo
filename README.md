@@ -3,6 +3,7 @@ my opinion based mono repo for shared libraries
 i only wanted to build stanalone liberies, run tests and publish 
 without any fancy stuff.
 
+## How to start?
 after using this template 
 change root package.json name (@monaorepo) property to your [Scope](https://docs.npmjs.com/cli/v9/using-npm/scope)
 
@@ -20,6 +21,19 @@ for example : `npm run genreate nest http-client`
 this will create a new libery template
 with the name `@monaorepo/nest-http-client`
 
+## How to publish libery:
+go to your package dir :
+
+* make some changes
+* write unit tests
+* commit your changes
+* run [npm version](https://docs.npmjs.com/cli/v7/commands/npm-version) command for example:  `npm version patch`
+* npm build
+* npm publish
+ 
+
+
+## File Structure:
 ### Nest 
  will genrate a nestjs liberary with this file sturcture
 ```
