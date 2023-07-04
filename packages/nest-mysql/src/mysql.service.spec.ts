@@ -1,4 +1,4 @@
-import { TemplateService } from './template.service';
+import { TemplateService } from './mysql.service';
 
 describe('TemplateService', () => {
   let templateService = new TemplateService();

@@ -7,7 +7,7 @@ export class HttpClientService {
     console.log('HttpClientService constructor');
   }
 
-  private async makeRequest(
+  private async makeReques1t(
     method: 'GET' | 'POST' | 'PUT' | 'DELETE',
     url: string,
     body?: any,

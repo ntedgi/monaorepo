@@ -68,3 +68,17 @@ and package.json with the following scripts
 │   └── template.ts
 └── ...
 ```
+
+
+### CI
+
+this template already setup with github actions for CI
+the workflow will run on every push to master branch
+and will run the following steps:
+1. checkout
+2. setup node
+3. install dependencies
+4. run tests
+5. build liberary
+
+commit -> Job 1 which packages changed: [kafka1 mysql2]

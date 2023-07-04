@@ -1,5 +1,5 @@
 {
-  "name": "@monaorepo/nest-http-client",
+  "name": "@monaorepo/nest-kafka-consumer",
   "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
     "prepublish": "npm run build && npm run test"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "@nestjs/common": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0"
   },
@@ -25,7 +25,6 @@
     "ts-node": "^10.0.0"
   },
   "dependencies": {
-    "@paralleldrive/cuid2": "^2.2.1"
   },
   "jest": {
     "moduleFileExtensions": [
