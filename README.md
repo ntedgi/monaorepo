@@ -1,5 +1,7 @@
 # monaorepo
-opinion based mono repo for shared libraries 
+my opinion based mono repo for shared libraries 
+i only wanted to build stanalone liberies, run tests and publish 
+without any fancy stuff.
 
 to genrate liberaries run `npm i` in the root directory
 then run `npm run genreate` to genrate the liberaries
