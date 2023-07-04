@@ -1,0 +1,14 @@
+{
+  "name": "monaorepo",
+  "version": "1.0.0",
+  "description": "opinion based mono repo for shared libraries",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node ./tools/gen.js"
+  },
+  "author": "Naor Tedgi (Naor.tedgi@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
