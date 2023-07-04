@@ -5,7 +5,7 @@ without any fancy stuff.
 
 ## How to start?
 after using this template 
-change root package.json name (@monaorepo) property to your [Scope](https://docs.npmjs.com/cli/v9/using-npm/scope)
+firts change root package.json name (@monaorepo) property to your [Scope](https://docs.npmjs.com/cli/v9/using-npm/scope)
 
 to genrate liberaries run `npm i` in the root directory
 then run `npm run genreate` to genrate the liberaries
