@@ -1,9 +1,11 @@
-import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { createId } from '@paralleldrive/cuid2';
 
 @Injectable()
 export class HttpClientService {
-  constructor() {}
+  constructor() {
+    console.log('HttpClientService constructor');
+  }
 
   private async makeRequest(
     method: 'GET' | 'POST' | 'PUT' | 'DELETE',
