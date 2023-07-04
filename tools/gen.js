@@ -22,6 +22,18 @@ function copyDirectoryContents(sourceDir, targetDir) {
   });
 }
 
+function getNamePropertyFromPackageJsonFile(packageJsonPath) {
+  const packageJson = require(packageJsonPath);
+  return packageJson.name;
+}
+function changeNamePropertyInPackageJsonFile(packageJsonPath, newName) {
+  const packageJson = require(packageJsonPath);
+  packageJson.name = newName;
+  fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
+}
+
+const scopeName = getNamePropertyFromPackageJsonFile(path.join(__dirname, '..', 'package.json'));
+
 program
   .argument('type', 'template type (basic | nest)')
   .argument('name', 'name for the generated file')
@@ -34,7 +46,7 @@ if (!fs.existsSync(outputFolderPath)) {
   fs.mkdirSync(outputFolderPath);
 }
 const [type, name] = program.args;
-const newPackagePath = path.join(outputFolderPath, name);
+const newPackagePath = path.join(outputFolderPath, `${type}-${name}`);
 
 
 switch (type) {
@@ -45,3 +57,5 @@ switch (type) {
     copyDirectoryContents(path.join(templateFolderPath, 'nest-module'), newPackagePath);
     break;
 }
+
+changeNamePropertyInPackageJsonFile(path.join(newPackagePath, 'package.json'), `@${scopeName}/${type}-${name}`)

@@ -7,7 +7,9 @@ need to pass 2 arguments to the script
 1. liberary name [string]
 2. liberary type [nest | basic]
 
-the libery name construct fro : `<scope>/<type>-<name>`
+the liberary name genrate from : `<scope>/<type>-<name>`
+
+`scope`: root package.json name field and @ prefix
 
 for example : `npm run genreate nest http-client`
 this will create a new libery template

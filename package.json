@@ -4,7 +4,7 @@
   "description": "opinion based mono repo for shared libraries",
   "main": "index.js",
   "scripts": {
-    "generate": "node ./tools/gen.js"
+    "gen": "node ./tools/gen.js"
   },
   "author": "Naor Tedgi (Naor.tedgi@gmail.com)",
   "license": "MIT",
