@@ -6,6 +6,13 @@ then run `npm run genreate` to genrate the liberaries
 need to pass 2 arguments to the script
 1. liberary name [string]
 2. liberary type [nest | basic]
+
+the libery name construct fro : `<scope>/<type>-<name>`
+
+for example : `npm run genreate nest http-client`
+this will create a new libery template
+with the name `@monaorepo/nest-http-client`
+
 ### Nest 
  will genrate a nestjs liberary with this file sturcture
 ```
@@ -27,8 +34,6 @@ and package.json with the following scripts
 "test": "jest",                 #(run tests)
 "test:watch": "jest --watch",   #(hot reload for tests)
 "test:cov": "jest --coverage"   #(test coverage)
-```
-
 ```
 
 ### Basic
