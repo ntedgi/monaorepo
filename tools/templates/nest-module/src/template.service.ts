@@ -3,7 +3,7 @@ import { Injectable} from '@nestjs/common';
 @Injectable()
 export class TemplateService {
   constructor() { }
-  sayHi() {
+  sayHi(): string {
     return "HI!"
   }
 }
