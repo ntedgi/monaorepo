@@ -8,7 +8,7 @@ after using this template
 firts change root package.json name (@monaorepo) property to your [Scope](https://docs.npmjs.com/cli/v9/using-npm/scope)
 
 to genrate liberaries run `npm i` in the root directory
-then run `npm run genreate` to genrate the liberaries
+then run `npm run generate` to genrate the liberaries
 need to pass 2 arguments to the script
 1. liberary name [string]
 2. liberary type [nest | basic]
